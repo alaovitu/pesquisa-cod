@@ -45,6 +45,7 @@ if search_query:
         st.dataframe(results)
     else:
         st.write("Nenhum resultado encontrado.")
+        timeout=30
 
 st.markdown("***")
 st.write("Desenvolvido por *Vitor s.*")
