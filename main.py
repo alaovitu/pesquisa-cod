@@ -15,7 +15,7 @@ def get_connection():
                               'DATABASE=' + database + ';'
                               'UID=' + username + ';'
                               'PWD=' + password + ';'
-                              'Connection Timeout=30;')  # 5 segundos, ajuste conforme necessário
+                              'Connection Timeout=50;')  # 5 segundos, ajuste conforme necessário
         return conn
     except Exception as e:
         st.error(f"Erro ao conectar ao banco de dados: {e}")
