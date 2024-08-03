@@ -10,11 +10,13 @@ def get_connection():
         database = 'AdventureWorks2017'
         username = 'vitor'
         password = '219288'
-        conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
-                              'SERVER=' + server + ';'
-                              'DATABASE=' + database + ';'
-                              'UID=' + username + ';'
-                              'PWD=' + password)
+      conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
+                      'SERVER=' + server + ';'
+                      'DATABASE=' + database + ';'
+                      'UID=' + username + ';'
+                      'PWD=' + password + ';'
+                      'Connection Timeout=10;')  # 5 segundos, ajuste conforme necessário
+
         return conn
     except Exception as e:
         st.error(f"Erro ao conectar ao banco de dados: {e}")
