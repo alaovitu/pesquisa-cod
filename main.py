@@ -6,7 +6,7 @@ import pandas as pd
 # Configuração da conexão
 def get_connection():
     try:
-        server = '127.0.0.1'
+        server = 'localhost'
         database = 'AdventureWorks2017'
         username = 'vitor'
         password = '219288'
