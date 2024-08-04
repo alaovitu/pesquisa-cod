@@ -7,7 +7,7 @@ import pandas as pd
 def get_connection():
     try:
         server = 'VICHELE\SQLEXPRESS01'
-        database = 'AdventureWorks2017'
+        database = 'EasyRentCar'
         username = 'vitor'
         password = '219288'
         conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};'
